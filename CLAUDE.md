@@ -134,8 +134,19 @@ build 過程遇到的連結問題與解法：
 3. 執行 `mkdocs build` 確認無警告
 4. 執行 `mkdocs serve` 預覽確認
 
-## 部署（待設定）
+## 部署
 
-目前尚未設定遠端部署。後續可選擇：
-- **GitHub Pages**：`mkdocs gh-deploy`（需建立 GitHub repo）
+### GitHub Pages（已完成）
+
+網站網址：https://ogen.github.io/claude-tutorial-site/
+
+更新網站只需一個指令：
+
+```bash
+cd /Users/ogen/Documents/claude-tutorial-site && mkdocs gh-deploy
+```
+
+執行後會自動 build 並推送到 `gh-pages` branch，約 1-2 分鐘生效。
+
+### 其他選項（備用）
 - **Netlify / Vercel**：連結 GitHub repo，push 自動觸發 build
